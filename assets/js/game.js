@@ -34,7 +34,7 @@ var fight = function(enemyName) {
         }
 
         //remove enemy's health by subtracting the amount set in the playerAttack variable
-        enemyhealth = enemyHealth - playerAttack;
+        enemyHealth = enemyHealth - playerAttack;
         console.log(
             playerName + ' attacked ' + enemyName + '. ' + enemyName + ' now has ' + enemyHealth + ' health remaining.'
         );
@@ -77,10 +77,10 @@ for(var i = 0; i < enemyNames.length; i++) {
         //pick new enemy to fight based on the index of the enemyNames array
         var pickedEnemyName = enemyNames[i];
         // reset enemyHealth before starting new fight
-        enemyHealth = 50;
+        //enemyHealth = 50;
 
         //use debugger to pause script from running and check what's going on at that moment in the code
-        debugger;
+        //debugger;
         
         //pass the pickedEnemyName variable's value into the fight function, where it will assume the value of the enemyName parameter
         fight(pickedEnemyName);
